@@ -44,7 +44,7 @@ global_templates:
     condition: "${w.getGElementsOfType('curiosbauble')?filter(e -> e.slotType == 'RING')?size != 0}"
   - template: bjson/slot_init.json.ftl
     writer: json
-    name: "@MODDATAROOT/curios/entities/@registryname.json"
+    name: "@MODDATAROOT/curios/entities/@NAME.json"
 
   - template: rendering/definitions.java.ftl
     name: "@SRCROOT/@BASEPACKAGEPATH/init/@JavaModNameLayerDefinitions.java"

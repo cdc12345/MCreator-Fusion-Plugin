@@ -38,7 +38,6 @@ public class Launcher extends JavaPlugin {
 
 	public static PluginActions ACTION_REGISTRY;
 	public static Set<Plugin> PLUGIN_INSTANCE = new HashSet<>();
-    public static final BlocklyEditorType CONFIG_EDITOR = new BlocklyEditorType("config", "cfg", "config_start");
     public static final List<String> DYEABLE_ARMOR_SUPPORTED_VERSIONS = List.of("neoforge-1.20.6", "forge-1.20.1");
     public static PluginActions ACTIONS;
 
@@ -52,7 +51,6 @@ public class Launcher extends JavaPlugin {
 
 		addListener(PreGeneratorsLoadingEvent.class, e -> {
 			PluginElementTypes.load();
-            BlocklyLoader.INSTANCE.addBlockLoader(CONFIG_EDITOR);
         });
 
 		addListener(ModElementGUIEvent.BeforeLoading.class, event -> SwingUtilities.invokeLater(() -> {
