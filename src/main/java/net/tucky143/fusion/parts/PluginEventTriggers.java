@@ -37,6 +37,8 @@ import net.mcreator.util.image.ImageUtils;
 import net.mcreator.workspace.elements.VariableTypeLoader;
 import net.tucky143.fusion.Launcher;
 import net.tucky143.fusion.elements.GeckolibElement;
+import net.tucky143.fusion.ui.modgui.CuriosSlotGUI;
+import net.tucky143.fusion.ui.modgui.CuriosBaubleGUI;
 import netscape.javascript.JSException;
 import netscape.javascript.JSObject;
 import org.w3c.dom.Element;
@@ -82,6 +84,11 @@ public class PluginEventTriggers {
             StringBuilder stringBuilder = new StringBuilder(L10N.t("dialog.geckolib.enable_geckolib"));
             JOptionPane.showMessageDialog(mcreator, stringBuilder.toString(),
                     L10N.t("dialog.geckolib.error_no_dependency"), JOptionPane.ERROR_MESSAGE);
+        }
+        if (!mcreator.getWorkspaceSettings().getDependencies().contains("curios_api") && (modElement instanceof CuriosSlotGUI || modElement instanceof CuriosBaubleGUI)) {
+            StringBuilder stringBuilder = new StringBuilder(L10N.t("dialog.curios_api.enable_curios"));
+            JOptionPane.showMessageDialog(mcreator, stringBuilder.toString(),
+                    L10N.t("dialog.curios_api.error_no_dependency"), JOptionPane.ERROR_MESSAGE);
         }
     }
 

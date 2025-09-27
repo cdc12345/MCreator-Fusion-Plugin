@@ -42,9 +42,6 @@ global_templates:
     writer: json
     name: "@RESROOT/data/curios/tags/item/ring.json"
     condition: "${w.getGElementsOfType('curiosbauble')?filter(e -> e.slotType == 'RING')?size != 0}"
-  - template: bjson/slot_init.json.ftl
-    writer: json
-    name: "@MODDATAROOT/curios/entities/@NAME.json"
 
   - template: rendering/definitions.java.ftl
     name: "@SRCROOT/@BASEPACKAGEPATH/init/@JavaModNameLayerDefinitions.java"
@@ -55,6 +52,10 @@ global_templates:
     name: "@SRCROOT/@BASEPACKAGEPATH/init/@JavaModNameCuriosProperties.java"
 
 templates:
+  - template: bjson/slot_init.json.ftl
+    writer: json
+    name: "@MODDATAROOT/curios/entities/@registryname.json"
+
   - template: bauble/item.java.ftl
     name: "@SRCROOT/@BASEPACKAGEPATH/item/@NAMEItem.java"
   - template: bauble/item_container.java.ftl
