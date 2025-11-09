@@ -38,7 +38,7 @@ dependencies {
 }
 
 tasks.jar {
-    archiveFileName.set("fusion-curios-2025.2.zip")
+    archiveFileName.set("fusion-curios-2025.3.zip")
 }
 
 tasks.register('runMCreatorWithPlugin', JavaExec) {

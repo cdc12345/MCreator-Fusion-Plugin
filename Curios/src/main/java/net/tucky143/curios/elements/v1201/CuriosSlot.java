@@ -1,8 +1,7 @@
-package net.tucky143.curios.elements;
+package net.tucky143.curios.elements.v1201;
 
 import net.mcreator.element.GeneratableElement;
 import net.mcreator.element.parts.MItemBlock;
-import net.mcreator.element.parts.TabEntry;
 import net.mcreator.workspace.elements.ModElement;
 
 import java.util.List;

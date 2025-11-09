@@ -1,4 +1,4 @@
-package net.tucky143.curios.elements;
+package net.tucky143.curios.elements.v1201;
 
 import java.awt.image.BufferedImage;
 import java.util.*;
