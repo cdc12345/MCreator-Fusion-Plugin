@@ -3,12 +3,12 @@
   "weight": 4200,
   "javaplugin": "net.tucky143.curios.Launcher",
   "supportedversions": [
-    2025002
+    2025003
   ],
   "info": {
     "name": "Fusion: Curios",
     "version": "1.0",
-    "description": "Unsupported Version of Curios 1.20.1+",
-    "author": "Tucky143, Originals Authors (NerdyPuzzle, MagicalAlexey)"
+    "description": "Unsupported Versions of Curios 1.20.1+",
+    "author": "Tucky143"
   }
 }

@@ -2,7 +2,7 @@ package ${package}.client.renderer;
 
 public class ${name}Renderer implements ICurioRenderer {
 
-	private static final ResourceLocation TEXTURE = new ResourceLocation("${modid}", "textures/entities/${data.baubleModelTexture}");
+	private static final ResourceLocation TEXTURE = ResourceLocation.parse("${data.baubleModelTexture.format("%s:textures/entities/%s")}.png");
 
 	private final ${data.baubleModel} model;
 

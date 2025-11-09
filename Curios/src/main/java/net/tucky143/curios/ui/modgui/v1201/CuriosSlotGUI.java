@@ -1,4 +1,4 @@
-package net.tucky143.curios.ui.modgui;
+package net.tucky143.curios.ui.modgui.v1201;
 
 import net.mcreator.element.parts.TextureHolder;
 import net.mcreator.generator.GeneratorUtils;
@@ -20,7 +20,7 @@ import net.mcreator.ui.validation.validators.TextFieldValidator;
 import net.mcreator.ui.validation.validators.TextureSelectionButtonValidator;
 import net.mcreator.ui.workspace.resources.TextureType;
 import net.mcreator.workspace.elements.ModElement;
-import net.tucky143.curios.elements.CuriosSlot;
+import net.tucky143.curios.elements.v1201.CuriosSlot;
 import org.apache.commons.lang3.StringUtils;
 import org.jetbrains.annotations.Nullable;
 

@@ -1,4 +1,4 @@
-package net.tucky143.curios.ui.modgui;
+package net.tucky143.curios.ui.modgui.v1201;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -55,7 +55,7 @@ import net.mcreator.workspace.elements.ModElement;
 import net.mcreator.workspace.elements.VariableTypeLoader.BuiltInTypes;
 import net.mcreator.workspace.resources.Model;
 import net.mcreator.workspace.resources.Model.Type;
-import net.tucky143.curios.elements.CuriosBauble;
+import net.tucky143.curios.elements.v1201.CuriosBauble;
 import net.tucky143.curios.parts.PluginElementTypes;
 import net.tucky143.curios.parts.WTextureComboBoxRenderer;
 import org.jetbrains.annotations.Nullable;
@@ -208,7 +208,6 @@ public class CuriosBaubleGUI extends ModElementGUI<CuriosBauble> {
         JPanel destal = new JPanel(new GridLayout(1, 2, 15, 15));
         destal.setOpaque(false);
         JComponent destal1 = PanelUtils.join(0, new Component[]{HelpUtils.wrapWithHelpButton(this.withEntry("item/glowing_effect"), L10N.label("elementgui.item.glowing_effect", new Object[0])), this.hasGlow, this.glowCondition});
-        destal.add(HelpUtils.wrapWithHelpButton(this.withEntry("item/special_information"), L10N.label("elementgui.item.tooltip_tip", new Object[0])));
         destal.add(this.specialInformation);
         this.hasGlow.setOpaque(false);
         this.hasGlow.setSelected(false);
@@ -461,22 +460,24 @@ public class CuriosBaubleGUI extends ModElementGUI<CuriosBauble> {
 
     public void reloadDataLists() {
         super.reloadDataLists();
-        this.onRightClickedInAir.refreshListKeepSelected();
-        this.onCrafted.refreshListKeepSelected();
-        this.onRightClickedOnBlock.refreshListKeepSelected();
-        this.onEntityHitWith.refreshListKeepSelected();
-        this.onItemInInventoryTick.refreshListKeepSelected();
-        this.onItemInUseTick.refreshListKeepSelected();
-        this.specialInformation.refreshListKeepSelected();
-        this.onStoppedUsing.refreshListKeepSelected();
-        this.onEntitySwing.refreshListKeepSelected();
-        this.onDroppedByPlayer.refreshListKeepSelected();
+        AbstractProcedureSelector.ReloadContext context = AbstractProcedureSelector.ReloadContext.create(
+                mcreator.getWorkspace());
+        this.onRightClickedInAir.refreshListKeepSelected(context);
+        this.onCrafted.refreshListKeepSelected(context);
+        this.onRightClickedOnBlock.refreshListKeepSelected(context);
+        this.onEntityHitWith.refreshListKeepSelected(context);
+        this.onItemInInventoryTick.refreshListKeepSelected(context);
+        this.onItemInUseTick.refreshListKeepSelected(context);
+        this.specialInformation.refreshListKeepSelected(context);
+        this.onStoppedUsing.refreshListKeepSelected(context);
+        this.onEntitySwing.refreshListKeepSelected(context);
+        this.onDroppedByPlayer.refreshListKeepSelected(context);
         this.customProperties.reloadDataLists();
-        this.onFinishUsingItem.refreshListKeepSelected();
-        this.curioTick.refreshListKeepSelected();
-        this.onEquip.refreshListKeepSelected();
-        this.onUnequip.refreshListKeepSelected();
-        this.glowCondition.refreshListKeepSelected();
+        this.onFinishUsingItem.refreshListKeepSelected(context);
+        this.curioTick.refreshListKeepSelected(context);
+        this.onEquip.refreshListKeepSelected(context);
+        this.onUnequip.refreshListKeepSelected(context);
+        this.glowCondition.refreshListKeepSelected(context);
         ComboBoxUtil.updateComboBoxContents(this.creativeTab, ElementUtil.loadAllTabs(this.mcreator.getWorkspace()), new DataListEntry.Dummy("MISC"));
         ComboBoxUtil.updateComboBoxContents(renderType, ListUtils.merge(Arrays.asList(CuriosBaubleGUI.builtinitemmodels), (Collection)Model.getModelsWithTextureMaps(this.mcreator.getWorkspace()).stream().filter((el) -> {
             return el.getType() == Type.JSON || el.getType() == Type.OBJ;
@@ -491,7 +492,7 @@ public class CuriosBaubleGUI extends ModElementGUI<CuriosBauble> {
             return el.getType() == Type.JAVA || el.getType() == Type.MCREATOR;
         }).collect(Collectors.toList())));
         ComboBoxUtil.updateComboBoxContents(this.slotType, ListUtils.merge(List.of("HEAD", "NECKLACE", "BACK", "BODY", "BRACELET", "HANDS", "RING", "BELT", "CHARM", "CURIO"), (List)this.mcreator.getWorkspace().getModElements().stream().filter((var) -> {
-            return var.getType() == PluginElementTypes.CURIOSSLOT;
+            return var.getType() == PluginElementTypes.CURIOSSLOT_1201;
         }).map(ModElement::getName).collect(Collectors.toList())));
     }
 
@@ -510,7 +511,7 @@ public class CuriosBaubleGUI extends ModElementGUI<CuriosBauble> {
     @Override
     protected void afterGeneratableElementStored() {
         this.mcreator.getWorkspace().getModElements().stream().forEach((var) -> {
-            if (var.getType() == PluginElementTypes.CURIOSSLOT) {
+            if (var.getType() == PluginElementTypes.CURIOSSLOT_1201) {
                 try {
                     mcreator.getGenerator().generateElement(var.getGeneratableElement(), false);
                 } catch (Exception e) {

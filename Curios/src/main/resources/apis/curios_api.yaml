@@ -8,29 +8,34 @@ forge-1.20.1:
     }
     
     dependencies {
-      runtimeOnly fg.deobf("top.theillusivec4.curios:curios-forge:5.4.2+1.20.1")
-      compileOnly fg.deobf("top.theillusivec4.curios:curios-forge:5.4.2+1.20.1:api")
+        modRuntimeOnly "top.theillusivec4.curios:curios-forge:5.4.2+1.20.1"
+        modCompileOnly "top.theillusivec4.curios:curios-forge:5.4.2+1.20.1:api"
+
+        annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
     }
-    
-    minecraft {
-      runs {
-         client {
-            property 'mixin.env.remapRefMap', 'true'
-            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
+    legacyForge {
+        validateAccessTransformers = true
+
+        runs {
+            client {
+                client()
+                programArguments.add("--mixin.env.remapRefMap=true")
+                programArguments.add("--mixin.env.refMapRemappingFile=${projectDir}/build/createSrgToMcp/output.srg")
+            }
+            server {
+                server()
+                programArguments.add("--mixin.env.remapRefMap=true")
+                programArguments.add("--mixin.env.refMapRemappingFile=${projectDir}/build/createSrgToMcp/output.srg")
+            }
+            data {
+                data()
+                programArguments.add("--mixin.env.remapRefMap=true")
+                programArguments.add("--mixin.env.refMapRemappingFile=${projectDir}/build/createSrgToMcp/output.srg")
+            }
         }
-    
-          server {
-            property 'mixin.env.remapRefMap', 'true'
-            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
-        }
-          data {
-            property 'mixin.env.remapRefMap', 'true'
-            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
-        }
-      }
     }
 
   update_files:
     - ~
 
-name: "Curios API"
+name: "Curios API (Legacy)"
