@@ -1,4 +1,4 @@
-package net.tucky143.fusion.ui.modgui;
+package net.tucky143.geckolib.ui.modgui;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -55,8 +55,8 @@ import net.mcreator.workspace.elements.ModElement;
 import net.mcreator.workspace.elements.VariableTypeLoader.BuiltInTypes;
 import net.mcreator.workspace.resources.Model;
 import net.mcreator.workspace.resources.Model.Type;
-import net.tucky143.fusion.elements.CuriosBauble;
-import net.tucky143.fusion.parts.PluginElementTypes;
+import net.tucky143.geckolib.elements.CuriosBauble;
+import net.tucky143.geckolib.parts.PluginElementTypes;
 import org.jetbrains.annotations.Nullable;
 
 public class CuriosBaubleGUI extends ModElementGUI<CuriosBauble> {

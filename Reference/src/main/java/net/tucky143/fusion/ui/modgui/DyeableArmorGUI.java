@@ -3,7 +3,7 @@
 // (powered by FernFlower decompiler)
 //
 
-package net.tucky143.fusion.ui.modgui;
+package net.tucky143.geckolib.ui.modgui;
 
 import java.awt.BorderLayout;
 import java.awt.Component;
@@ -70,8 +70,8 @@ import net.mcreator.util.image.ImageUtils;
 import net.mcreator.workspace.elements.ModElement;
 import net.mcreator.workspace.resources.Model;
 import net.mcreator.workspace.resources.Model.Type;
-import net.tucky143.fusion.elements.DyeableArmor;
-import net.tucky143.fusion.ui.components.OverlayTextureComboBox;
+import net.tucky143.geckolib.elements.DyeableArmor;
+import net.tucky143.geckolib.ui.components.OverlayTextureComboBox;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.jboss.forge.roaster.Roaster;

@@ -1,4 +1,4 @@
-package net.tucky143.fusion.utils;
+package net.tucky143.geckolib.utils;
 
 import net.mcreator.minecraft.DataListEntry;
 import net.mcreator.minecraft.DataListLoader;

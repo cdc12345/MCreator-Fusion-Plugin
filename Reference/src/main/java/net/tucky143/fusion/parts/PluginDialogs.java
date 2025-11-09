@@ -1,4 +1,4 @@
-package net.tucky143.fusion.parts;
+package net.tucky143.geckolib.parts;
 
 import net.mcreator.element.ModElementType;
 import net.mcreator.element.parts.procedure.NumberProcedure;
@@ -13,7 +13,7 @@ import net.mcreator.ui.init.UIRES;
 import net.mcreator.util.ListUtils;
 import net.mcreator.workspace.elements.FolderElement;
 import net.mcreator.workspace.elements.ModElement;
-import net.tucky143.fusion.elements.AnimatedEntity;
+import net.tucky143.geckolib.elements.AnimatedEntity;
 
 import javax.swing.*;
 import java.awt.*;

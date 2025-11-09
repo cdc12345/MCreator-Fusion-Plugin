@@ -3,7 +3,7 @@
 // (powered by FernFlower decompiler)
 //
 
-package net.tucky143.fusion.ui.components;
+package net.tucky143.geckolib.ui.components;
 
 import java.awt.Component;
 import java.util.Collections;
@@ -28,8 +28,8 @@ import net.mcreator.util.ListUtils;
 import net.mcreator.util.image.EmptyIcon;
 import net.mcreator.util.image.ImageUtils;
 import net.mcreator.workspace.resources.Texture;
-import net.tucky143.fusion.Launcher;
-import net.tucky143.fusion.parts.PluginActions;
+import net.tucky143.geckolib.Launcher;
+import net.tucky143.geckolib.parts.PluginActions;
 
 public class OverlayTextureComboBox extends JPanel {
     private final Texture empty;

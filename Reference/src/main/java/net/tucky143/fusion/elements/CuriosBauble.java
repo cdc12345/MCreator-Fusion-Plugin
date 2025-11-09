@@ -1,4 +1,4 @@
-package net.tucky143.fusion.elements;
+package net.tucky143.geckolib.elements;
 
 import java.awt.image.BufferedImage;
 import java.util.*;

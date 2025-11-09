@@ -1,9 +1,9 @@
-package net.tucky143.fusion.parts;
+package net.tucky143.geckolib.parts;
 
 import net.mcreator.element.ModElementType;
 import net.mcreator.generator.GeneratorFlavor;
-import net.tucky143.fusion.ui.modgui.*;
-import net.tucky143.fusion.elements.*;
+import net.tucky143.geckolib.ui.modgui.*;
+import net.tucky143.geckolib.elements.*;
 
 import static net.mcreator.element.ModElementTypeLoader.register;
 import static net.mcreator.generator.GeneratorFlavor.BaseLanguage.JAVA;

@@ -1,4 +1,4 @@
-package net.tucky143.fusion.parts;
+package net.tucky143.geckolib.parts;
 
 import javafx.stage.FileChooser;
 import net.mcreator.io.FileIO;

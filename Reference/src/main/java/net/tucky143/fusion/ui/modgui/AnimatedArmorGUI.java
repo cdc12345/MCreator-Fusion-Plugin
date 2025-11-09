@@ -1,4 +1,4 @@
-package net.tucky143.fusion.ui.modgui;
+package net.tucky143.geckolib.ui.modgui;
 
 import net.mcreator.blockly.data.Dependency;
 import net.mcreator.minecraft.ElementUtil;
@@ -30,12 +30,12 @@ import net.mcreator.util.ListUtils;
 import net.mcreator.util.StringUtils;
 import net.mcreator.workspace.elements.ModElement;
 import net.mcreator.workspace.resources.Model;
-import net.tucky143.fusion.elements.AnimatedArmor;
-import net.tucky143.fusion.elements.GeckolibElement;
-import net.tucky143.fusion.parts.GeomodelRenderer;
-import net.tucky143.fusion.parts.PluginModelActions;
-import net.tucky143.fusion.parts.RefactoredSystemsICopyPastedBecauseIWasTooBloodyLazyToActuallyProperlyReplace;
-import net.tucky143.fusion.parts.WTextureComboBoxRenderer;
+import net.tucky143.geckolib.elements.AnimatedArmor;
+import net.tucky143.geckolib.elements.GeckolibElement;
+import net.tucky143.geckolib.parts.GeomodelRenderer;
+import net.tucky143.geckolib.parts.PluginModelActions;
+import net.tucky143.geckolib.parts.RefactoredSystemsICopyPastedBecauseIWasTooBloodyLazyToActuallyProperlyReplace;
+import net.tucky143.geckolib.parts.WTextureComboBoxRenderer;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.jetbrains.annotations.Nullable;

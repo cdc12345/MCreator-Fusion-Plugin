@@ -1,4 +1,4 @@
-package net.tucky143.fusion;
+package net.tucky143.geckolib;
 
 import net.mcreator.blockly.data.BlocklyLoader;
 import net.mcreator.generator.Generator;
@@ -18,10 +18,10 @@ import net.mcreator.ui.init.UIRES;
 import net.mcreator.ui.modgui.BiomeGUI;
 import net.mcreator.ui.modgui.ModElementGUI;
 import net.mcreator.ui.workspace.AbstractWorkspacePanel;
-import net.tucky143.fusion.parts.PluginActions;
-import net.tucky143.fusion.parts.PluginElementTypes;
-import net.tucky143.fusion.parts.PluginEventTriggers;
-import net.tucky143.fusion.ui.modgui.CuriosSlotGUI;
+import net.tucky143.geckolib.parts.PluginActions;
+import net.tucky143.geckolib.parts.PluginElementTypes;
+import net.tucky143.geckolib.parts.PluginEventTriggers;
+import net.tucky143.geckolib.ui.modgui.CuriosSlotGUI;
 
 import javax.swing.*;
 

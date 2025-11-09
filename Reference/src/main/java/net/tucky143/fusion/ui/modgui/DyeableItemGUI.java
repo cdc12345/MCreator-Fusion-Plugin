@@ -3,7 +3,7 @@
 // (powered by FernFlower decompiler)
 //
 
-package net.tucky143.fusion.ui.modgui;
+package net.tucky143.geckolib.ui.modgui;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -28,7 +28,7 @@ import javax.swing.JSpinner;
 import javax.swing.SpinnerNumberModel;
 
 import net.mcreator.ui.validation.validators.TextureSelectionButtonValidator;
-import net.tucky143.fusion.elements.DyeableItem;
+import net.tucky143.geckolib.elements.DyeableItem;
 import net.mcreator.blockly.data.Dependency;
 import net.mcreator.element.GeneratableElement;
 import net.mcreator.element.ModElementType;

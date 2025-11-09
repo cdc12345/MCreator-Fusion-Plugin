@@ -1,4 +1,4 @@
-package net.tucky143.fusion.ui.modgui;
+package net.tucky143.geckolib.ui.modgui;
 
 import net.mcreator.ui.MCreator;
 import net.mcreator.ui.component.util.ComboBoxUtil;
@@ -14,7 +14,7 @@ import net.mcreator.ui.validation.validators.TextFieldValidator;
 import net.mcreator.ui.workspace.resources.TextureType;
 import net.mcreator.util.ListUtils;
 import net.mcreator.workspace.elements.ModElement;
-import net.tucky143.fusion.elements.Toast;
+import net.tucky143.geckolib.elements.Toast;
 import org.jetbrains.annotations.Nullable;
 
 import javax.annotation.Nonnull;

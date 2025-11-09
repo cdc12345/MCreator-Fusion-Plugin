@@ -1,4 +1,4 @@
-package net.tucky143.fusion.parts;
+package net.tucky143.geckolib.parts;
 
 import net.mcreator.generator.GeneratorUtils;
 import net.mcreator.io.FileIO;

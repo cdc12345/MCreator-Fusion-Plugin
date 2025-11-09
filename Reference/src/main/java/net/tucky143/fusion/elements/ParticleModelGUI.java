@@ -1,4 +1,4 @@
-package net.tucky143.fusion.elements;
+package net.tucky143.geckolib.elements;
 
 import net.mcreator.blockly.data.Dependency;
 import net.mcreator.element.ModElementType;
@@ -19,7 +19,7 @@ import net.mcreator.ui.validation.AggregatedValidationResult;
 import net.mcreator.ui.validation.ValidationGroup;
 import net.mcreator.workspace.elements.ModElement;
 import net.mcreator.workspace.resources.Model;
-import net.tucky143.fusion.parts.PluginElementTypes;
+import net.tucky143.geckolib.parts.PluginElementTypes;
 
 import java.net.URI;
 import java.net.URISyntaxException;

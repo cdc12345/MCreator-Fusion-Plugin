@@ -3,7 +3,7 @@
 // (powered by FernFlower decompiler)
 //
 
-package net.tucky143.fusion.elements;
+package net.tucky143.geckolib.elements;
 
 import java.awt.Color;
 import java.awt.Image;
@@ -37,7 +37,7 @@ import net.mcreator.workspace.references.TextureReference;
 import net.mcreator.workspace.resources.Model;
 import net.mcreator.workspace.resources.TexturedModel;
 import net.mcreator.workspace.resources.Model.Type;
-import net.tucky143.fusion.utils.DyeableImageUtils;
+import net.tucky143.geckolib.utils.DyeableImageUtils;
 
 public class DyeableArmor extends GeneratableElement implements IItem, ITabContainedElement {
     public boolean enableHelmet;

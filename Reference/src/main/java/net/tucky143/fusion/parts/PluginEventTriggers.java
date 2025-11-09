@@ -1,4 +1,4 @@
-package net.tucky143.fusion.parts;
+package net.tucky143.geckolib.parts;
 
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
@@ -35,10 +35,10 @@ import net.mcreator.ui.variants.modmaker.ModMaker;
 import net.mcreator.util.DesktopUtils;
 import net.mcreator.util.image.ImageUtils;
 import net.mcreator.workspace.elements.VariableTypeLoader;
-import net.tucky143.fusion.Launcher;
-import net.tucky143.fusion.elements.GeckolibElement;
-import net.tucky143.fusion.ui.modgui.CuriosSlotGUI;
-import net.tucky143.fusion.ui.modgui.CuriosBaubleGUI;
+import net.tucky143.geckolib.Launcher;
+import net.tucky143.geckolib.elements.GeckolibElement;
+import net.tucky143.geckolib.ui.modgui.CuriosSlotGUI;
+import net.tucky143.geckolib.ui.modgui.CuriosBaubleGUI;
 import netscape.javascript.JSException;
 import netscape.javascript.JSObject;
 import org.w3c.dom.Element;

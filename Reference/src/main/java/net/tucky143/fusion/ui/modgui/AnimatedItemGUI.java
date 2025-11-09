@@ -1,4 +1,4 @@
-package net.tucky143.fusion.ui.modgui;
+package net.tucky143.geckolib.ui.modgui;
 
 import net.mcreator.blockly.data.Dependency;
 import net.mcreator.element.GeneratableElement;
@@ -34,11 +34,11 @@ import net.mcreator.util.ListUtils;
 import net.mcreator.util.StringUtils;
 import net.mcreator.workspace.elements.ModElement;
 import net.mcreator.workspace.elements.VariableTypeLoader;
-import net.tucky143.fusion.elements.AnimatedItem;
-import net.tucky143.fusion.elements.GeckolibElement;
-import net.tucky143.fusion.parts.GeomodelRenderer;
-import net.tucky143.fusion.parts.PluginModelActions;
-import net.tucky143.fusion.parts.arm_pose_list.JArmPoseList;
+import net.tucky143.geckolib.elements.AnimatedItem;
+import net.tucky143.geckolib.elements.GeckolibElement;
+import net.tucky143.geckolib.parts.GeomodelRenderer;
+import net.tucky143.geckolib.parts.PluginModelActions;
+import net.tucky143.geckolib.parts.arm_pose_list.JArmPoseList;
 import org.jetbrains.annotations.Nullable;
 
 import javax.swing.*;

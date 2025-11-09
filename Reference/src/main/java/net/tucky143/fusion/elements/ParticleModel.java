@@ -1,4 +1,4 @@
-package net.tucky143.fusion.elements;
+package net.tucky143.geckolib.elements;
 
 import net.mcreator.element.GeneratableElement;
 import net.mcreator.element.parts.procedure.NumberProcedure;
